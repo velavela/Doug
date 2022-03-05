@@ -1,5 +1,10 @@
 /* GLOBAL STYLES */
 
+:root {
+  --background: rgba(238, 121, 181, .5);
+
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +16,7 @@ html, body {
   text-align: center;
   font-size: 16px;
   color: pink;
+  background: black;
 
 
 }
@@ -37,12 +43,153 @@ img {
 
 */
 
+/* BUTTONS */
 
-/* index page */
+.button {
+  display: inline-block;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 3px;
+  border-style: solid;
+  padding: .5em 1.75em;
+  background-color: pink;
+  margin: 0;
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+  background: none;
+
+}
+
+.button-accent {
+  color: pink;
+  border-color: #00ff6c;
+}
+
+.button-accent-cta {
+  color: black;
+  border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #00ff6c;
+  color: #232323;
+}
+
+
+.button-accent-cta:hover,
+.button-accent-cta:focus {
+  background: #00ff6c;
+  color: #232323;
+}
+
+
+/* INDEX PAGE */
+
+
+/* nav styles */
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 2em 0;
+
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: orange;
+  height: 3px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: .7em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: .8rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
 
 .home-hero {
   background-color: black;
-  padding: 5em 0;
+  padding: 10em 0 6.5em;
   margin: 0;
   width: 100vw;
   margin-left: -2.5%;
@@ -50,7 +197,7 @@ img {
 
 
 
-.hero-title {
+.title {
   font-family: 'Bungee Shade', cursive;
   font-size: 2em;
 }
@@ -93,25 +240,6 @@ img {
 }
 
 /* optional hero end */
-
-.services-section {
-  padding: 1em;
-  /* background-color: black; */
-  margin: 0;
-  width: 100vw;
-  margin-left: -2.5%;
-}
-
-.service-title {
-  font-family: 'Monofett', cursive;
-  font-size: 1.7em;
-}
-
-
-.service-para {
-  padding: 1em;
-  line-height: 1.5em;
-}
 
 .a {
   color: red;
@@ -173,3 +301,317 @@ img {
 .o {
   color: red;
 }
+
+
+
+/* SERVICE SECTION */
+
+.services-section {
+  padding: 1.5em;
+  background-color: black;
+  margin: 0;
+  width: 100vw;
+  margin-left: -2.5%;
+}
+
+.service-title {
+  font-family: 'Monofett', cursive;
+  font-size: 1.7em;
+}
+
+
+.service-para {
+  line-height: 1.5em;
+  padding: 1em;
+
+}
+
+.first-para {
+  border: 2px solid orange;
+
+}
+
+.second-para {
+  border: 2px solid orange;
+}
+
+.third-para {
+  border: 2px solid orange;
+}
+
+.service-textbox {
+}
+
+.break-section {
+  background-image: url(../images/thread-floyd.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 7em 0;
+  width: 100vw;
+}
+
+
+
+
+/* PORTFOLIO SECTION */
+
+.portfolio-section  {
+  background-color: black;
+  /* padding: 2.5em 0 2.5em 0; */
+  margin: 0;
+  width: 100vw;
+  margin-left: -2.5%;
+  }
+
+  .portfolio-textbox {
+    padding: 3em 1em 3em 1em;
+  }
+
+  .port-para {
+    border: 2px solid orange;
+    padding: 1em;
+    margin: 1em;
+
+  }
+
+  .price-para {
+    font-family: 'Monofett', cursive;
+    font-size: 1.5em;
+    margin-bottom: .2em;
+    margin-top: 0;
+
+  }
+
+  .port-item {
+    margin: 0;
+    position: relative;
+  }
+
+  .port-item img {
+    display: block;
+  }
+
+  .port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 2em;
+    left: 6em;
+    right: 6em;
+    color: pink;
+    background: rgba(0,0,0,.75);
+    padding-bottom: 1em;
+    padding-top: .5em;
+  }
+
+
+
+  /* CTA SECTION */
+
+  .cta-section {
+    background-image: url(../images/buttons-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4em 0;
+    width: 100vw;
+    margin-left: -2.5%;
+  }
+
+
+  .button-hero {
+    background-image: url(../images/buttons-2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0;
+    width: 100vw;
+    margin-left: -2.5%;
+  }
+
+/* CAROUSEL */
+
+.carousel-section {
+  width: 100%;
+  margin-left: -2.5%;
+  margin: 5em 0 5em 0;
+  padding: 5em 0 5em 0;
+  border: 2px solid blue;
+
+}
+
+
+.carousel__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%
+
+}
+
+.carousel__track-container {
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  /* position: absolute; */
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+}
+
+.carousel__button img {
+  width: 25px;
+}
+
+.carousel__button--left {
+}
+
+.carousel {
+  border: 2px solid red;
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 10em auto;
+  padding: 1em 1.5em 6em;;
+}
+
+
+/* FOOTER */
+
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.unstyled-list {
+  margin: .5em;
+  padding: .5em;
+  list-style-type: none;
+  /* text-align: left; */
+}
+
+li {
+  padding-top: .5em;
+}
+
+.list-title {
+  padding: .5em 0;
+}
+
+
+/* ABOUT PAGE */
+
+.about-hero {
+  background-image: url(../images/neon-crinkle-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2em 0;
+  width: 100vw;
+  margin-left: -2.5%;
+}
+
+.about-textbox {
+  background: black;
+  margin: 3em 1em;
+  padding: 1em;
+}
+
+
+/* CONTACT PAGE */
+
+.contact-hero {
+  background-image: url(../images/neon-crinkle-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2em 0;
+  width: 100vw;
+  margin-left: -2.5%;
+}
+
+.contact-textbox {
+  background: black;
+  margin: 6.5em 1em 3em;
+  padding: 1em;
+}
+
+
+/* SERVICES PAGE */
+
+.services-hero {
+  background-image: url(../images/tuft.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4.5em 0 3em;
+  width: 100vw;
+  margin-left: -2.5%;
+}
+
+.service-listing {
+  background: black;
+  margin: 0;
+}
+
+.do-not-yet {
+  padding: 1em;
+}
+.service-subtitle {
+  color: orange;
+}
+
+.service-listing-2 {
+  background: black;
+  text-align: left;
+}
+
+.service-listing-subtitle {
+  text-align: center;
+  font-family: 'Monofett', cursive;
+  color: orange;
+}
+
+
+/* . {
+  background-image: url(../images/neon-crinkle.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4em 0;
+  width: 100vw;
+  /* margin-left: -2.5%; */
+
+.contact-cta-section {
+  background-image: url(../images/neon-crinkle.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4.5em 0 3em;
+  width: 100vw;
+  margin-left: -2.5%;
+}
+
+/* MEDIA QUERIES */
+/*
+@media screen and (min-width: IDFKpx) {
+  .nav-toggle-label {
+    display: none;
+
+  }
+} */
