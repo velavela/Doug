@@ -208,6 +208,25 @@ nav a:hover {
 }
 
 
+
+
+@media (min-width: 500px) {
+  .home-hero {
+    padding: 13em 0 9.5em;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .title {
+    font-size: 3em;
+  }
+
+  .hero-subtitle {
+    font-size: 2.5em;
+  }
+
+}
 /* Optional Hero */
 
 
@@ -238,6 +257,8 @@ nav a:hover {
     margin-left: 3.5em;
     margin-right: 3.5em;
 }
+
+
 
 /* optional hero end */
 
@@ -346,11 +367,33 @@ nav a:hover {
   background-image: url(../images/thread-floyd.jpg);
   background-size: cover;
   background-position: center;
-  padding: 7em 0;
+  padding: 17em 0;
   width: 100vw;
 }
 
+@media (min-width: 500px) {
+  .service-para {
+    margin: 2em;
+    padding: 3em 2.5em;
+  }
+  .service-title   {
+    font-size: 2.3em;
+    padding-top: 1em;
+  }
+  .services-section {
+    padding-top: 2.5em;
+  }
+}
 
+
+
+@media (min-width: 800px) {
+  .service-para {
+    margin: 0 5em 0;
+    padding: 3em 2em;
+    font-size: 1.3rem;
+  }
+}
 
 
 /* PORTFOLIO SECTION */
@@ -371,6 +414,8 @@ nav a:hover {
     border: 2px solid orange;
     padding: 1em;
     margin: 1em;
+    line-height: 1.5em;
+
 
   }
 
@@ -403,7 +448,30 @@ nav a:hover {
     padding-top: .5em;
   }
 
+@media (min-width: 500px) {
+  .port-para {
+    margin: 2em;
+    padding: 3em 2.5em;
+  }
+}
 
+
+@media (min-width: 800px) {
+  .port-para {
+    margin: 0 5em 0;
+    padding: 3em 2em;
+    font-size: 1.3rem;
+  }
+
+  .portfolio-textbox {
+    padding-bottom: 9em;
+    padding-top: 7em;
+  }
+
+  .porfolio-section {
+
+  }
+}
 
   /* CTA SECTION */
 
@@ -418,13 +486,24 @@ nav a:hover {
 
 
   .button-hero {
-    background-image: url(../images/buttons-2.jpg);
+    background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
-    padding: 2em 0;
+    padding: 3em 0;
     width: 100vw;
     margin-left: -2.5%;
   }
+
+  @media screen and (min-width: 500px) {
+    .cta-section {
+      padding: 7em 0;
+      }
+
+
+  @media screen and (min-width: 800px) {
+    .cta-section {
+      padding: 8em 0;
+    }
 
 /* CAROUSEL */
 
@@ -497,7 +576,7 @@ nav a:hover {
 
 footer {
   background-color: black;
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
@@ -505,19 +584,35 @@ footer {
 
 .unstyled-list {
   margin: .5em;
-  padding: .5em;
-  list-style-type: none;
+  padding: 1em;
+list-style-type: none;
   /* text-align: left; */
 }
 
 li {
   padding-top: .5em;
+
+  /* text-align: left; */
 }
 
 .list-title {
   padding: .5em 0;
 }
 
+
+
+@media (min-width: 500px) {
+  .footer-flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+  .footer-flexbox-container > * {
+    flex: 1 1 10em;
+  }
+  }
+
+}
 
 /* ABOUT PAGE */
 
@@ -605,6 +700,107 @@ li {
   padding: 4.5em 0 3em;
   width: 100vw;
   margin-left: -2.5%;
+}
+
+.footer-subtitle {
+  font-family: 'Monofett', cursive;
+  color: orange;
+}
+
+/* COMING SOON */
+
+
+
+.cs-title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 2em;
+  color: orange;
+
+}
+
+.cs-subtitle {
+  font-family: 'Monofett', cursive;
+color: pink;
+margin: 0;
+padding: 0;
+}
+
+.cs-content-para {
+  /* font-size: 3em; */
+  color: orange;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+.cs-content-para-2 {
+  /* font-size: 3em; */
+  color: orange;
+  padding: 0 0 2em 0;
+  margin: 0 0 1em 0;
+}
+.cs-textbox {
+  background: black;
+  /* margin: auto 20em; */
+  padding: .3em;
+}
+.redhearts {
+  color: red;
+}
+
+
+@media screen and (min-width: 500px) {
+
+  .cs-textbox {
+    padding: 4em;
+  }
+}
+
+@media screen and (min-width: 1400px){
+
+ .cs-hero {
+  background-image: url(../images/neon-crinkle.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 12em 0 10em;
+  width: 100vw;
+  margin-left: -2.5%;
+}
+
+.cs-title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 5em;
+  color: orange;
+
+}
+
+.cs-subtitle {
+  font-family: 'Monofett', cursive;
+font-size: 3em;
+color: pink;
+margin: 0;
+padding: 0;
+}
+
+.cs-content-para {
+  font-size: 3em;
+  color: orange;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+.cs-content-para-2 {
+  font-size: 3em;
+  color: orange;
+  padding: 0 0 2em 0;
+  margin: 0 0 1em 0;
+}
+.cs-textbox {
+  background: black;
+  margin: auto 20em;
+  padding: .3em;
+}
+
+.redhearts {
+  color: black;
+}
 }
 
 /* MEDIA QUERIES */
