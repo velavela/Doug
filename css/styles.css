@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  transition: all ease-in-out 250ms;
 }
 
 html, body {
@@ -331,6 +332,15 @@ nav a:hover {
   color: red;
 }
 
+.neon-hero {
+background-image: url(../images/hero.jpg);
+background-size: cover;
+background-position: center;
+padding: 3em 0;
+width: 100vw;
+margin-left: -2.5%;
+}
+
 /* SERVICE SECTION */
 .services-section {
   padding: 1.5em;
@@ -410,6 +420,7 @@ nav a:hover {
 }
 
 /* PORTFOLIO SECTION */
+
 .portfolio-section {
   background-color: black;
   /* padding: 2.5em 0 2.5em 0; */
@@ -448,13 +459,17 @@ nav a:hover {
 .port-desc {
   position: absolute;
   z-index: 100;
-  bottom: 2em;
+  /* bottom: 2em;
   left: 6em;
-  right: 6em;
+  right: 6em;  */
   color: pink;
-  background: rgba(0, 0, 0, .75);
+  background: rgba(0, 0, 0, .6);
   padding-bottom: 1em;
   padding-top: .5em;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+
 }
 
 @media (min-width: 500px) {
@@ -476,10 +491,35 @@ nav a:hover {
     padding-top: 7em;
   }
 
-  .porfolio-section {}
 }
 
+
+@media (min-width: 500px) {
+  .port-item {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 900px) {
+  .port-item {
+    width: 33.3333334%;
+    overflow: hidden;
+  }
+
+  .port-desc {
+    transform: translateY(150%);
+
+  }
+
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+  }
+}
+
+
 /* CTA SECTION */
+
 .cta-section {
   background-image: url(../images/buttons-1.jpg);
   background-size: cover;
@@ -489,18 +529,13 @@ nav a:hover {
   margin-left: -2.5%;
 }
 
-.button-hero {
-  background-image: url(../images/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 3em 0;
-  width: 100vw;
-  margin-left: -2.5%;
-}
+
 
 @media screen and (min-width: 500px) {
   .cta-section {
     padding: 7em 0;
+
+
   }
 }
 
@@ -724,7 +759,7 @@ li {
     text-align: right;
   }
 
-  .button-hero {
+  .neon-hero {
     display: none;
   }
 
