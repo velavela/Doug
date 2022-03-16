@@ -35,7 +35,6 @@ a:hover {
 
 .container {
   width: 95%;
-  /* max-width: 1100px; */
   margin: 0 auto;
 }
 
@@ -345,10 +344,13 @@ margin-left: -2.5%;
 .services-section {
   padding: 1.5em;
   background-color: black;
-  margin: 0;
+  /* margin: 0; */
   width: 100vw;
-  margin-left: -2.5%;
+  /* margin-left: -2.5%; */
+  /* max-width: 1000px; */
+  /* margin: auto; */
 }
+
 
 .service-title {
   font-family: 'Monofett', cursive;
@@ -372,7 +374,6 @@ margin-left: -2.5%;
   border: 2px solid orange;
 }
 
-.service-textbox {}
 
 .break-section {
   background-image: url(../images/thread-floyd.jpg);
@@ -407,6 +408,13 @@ margin-left: -2.5%;
   }
 }
 
+
+@media (min-width: 400px) {
+  .service-textbox {
+    max-width: 400px;
+    margin: auto;
+  }
+}
 @media (min-width: 800px) {
   .service-para {
     margin: 0 5em 0;
@@ -649,7 +657,7 @@ li {
 
 /* ABOUT PAGE */
 .about-hero {
-  background-image: url(../images/neon-crinkle-2.jpg);
+  background-image: url(../images/neon-crinkle-3.jpg);
   background-size: cover;
   background-position: center;
   padding: 2em 0;
@@ -659,24 +667,50 @@ li {
 
 .about-textbox {
   background: black;
-  margin: 3em 1em;
   padding: 1em;
+  margin: 11em auto;
+  max-width: 800px;
+}
+
+@media (min-width: 800px) {
+.about-textbox {
+  padding: 5em;
+}
 }
 
 /* CONTACT PAGE */
 .contact-hero {
-  background-image: url(../images/neon-crinkle-2.jpg);
+  background-image: url(../images/rainbow-wall.jpg);
   background-size: cover;
   background-position: center;
-  padding: 2em 0;
+  padding: 6em 0;
   width: 100vw;
   margin-left: -2.5%;
 }
 
+
 .contact-textbox {
   background: black;
-  margin: 6.5em 1em 3em;
-  padding: 1em;
+  margin: 10em auto;
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+.content-para {
+  color: orange;
+
+}
+
+@media (min-width: 800px) {
+.contact-textbox {
+  margin: 10em auto;
+  padding: 5em;
+  max-width: 800px;
+}
+
+.content-para {
+  font-size: 1.5rem;
+
+}
 }
 
 /* SERVICES PAGE */
@@ -695,7 +729,7 @@ li {
 }
 
 .do-not-yet {
-  padding: 1em;
+  padding: 3em 2em;
 }
 
 .service-subtitle {
@@ -713,6 +747,15 @@ li {
   color: orange;
 }
 
+.add-ons {
+  padding-top: 1em;
+}
+ .contact-cta-section {
+   margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+
 /* . {
   background-image: url(../images/neon-crinkle.jpg);
   background-size: cover;
@@ -720,11 +763,12 @@ li {
   padding: 4em 0;
   width: 100vw;
   /* margin-left: -2.5%; */
+
 .contact-cta-section {
-  background-image: url(../images/neon-crinkle.jpg);
+  background-image: url(../images/neon-crinkle-3.jpg);
   background-size: cover;
   background-position: center;
-  padding: 4.5em 0 3em;
+  padding: 4em 0 4em;
   width: 100vw;
   margin-left: -2.5%;
 }
@@ -768,12 +812,15 @@ li {
   }
 
   .services-section {
-    padding: 1.5em 1.5em;
+    /* padding: 1.5em 1.5em; */
+    padding: 4em 6em 4em 3em;
     background-color: black;
-    margin: 0;
+    /* margin: 0; */
     width: 100vw;
-    margin-left: -2.5%;
+    /* margin-left: -2.5%; */
     display: flex;
+    margin: auto;
+    max-width: 1500px;
   }
 
   .service-title {
@@ -789,9 +836,70 @@ li {
   .single-line {
     padding-top: 2.15em;
   }
+  .second-para {
+    padding-bottom: 2.5em;
 
+  }
   .third-para {
     padding-bottom: 2.5em;
+  }
+
+  .port-para {
+    margin: 0 8em 0;
+    padding: 3em 2em;
+    font-size: 1.5em;
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+  .middle {
+    padding-top: 2.18em;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .double-line {
+    padding-top: 2.15em;
+  }
+  .third-para {
+    padding-bottom: 1em;
+  }
+}
+
+@media (min-width: 1300px) {
+
+    .third-para {
+      padding-bottom: 2.5em;
+    }
+
+    .break-section {
+      padding: 15em 0 45em 0;
+    }
+
+    .port-para {
+      margin: 0 15em 0;
+      padding: 3em 3.5em;
+      font-size: 1.5em;
+    }
+}
+
+
+@media (min-width: 1300px) {
+  .desk-title {
+    margin-right: .5em;
+  }
+
+  .hero-subtitle {
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .third-para {
+    padding-bottom: 1em;
   }
 }
 
