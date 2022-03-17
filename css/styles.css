@@ -40,11 +40,8 @@ a:hover {
 
 /* TYPOGRAPHY */
 /*  font-family: 'Bungee Shade', cursive;
-
     font-family: 'Monofett', cursive;
-
     font-family: 'Quicksand', sans-serif;
-
 */
 /* BUTTONS */
 .button {
@@ -446,23 +443,17 @@ margin-left: -2.5%;
     margin: 2em;
     padding: 3em 2.5em;
   }
-
   .service-title {
     font-size: 2.3em;
     padding-top: 1em;
   }
-
   .services-section {
     padding-top: 2.5em;
   }
-
   .break-section {
     padding: 12em 0;
   }
 }
-
-
-
 @media (min-width: 400px) {
   .service-textbox {
     max-width: 400px;
@@ -552,8 +543,6 @@ margin-left: -2.5%;
     padding: 11em 0;
   }
 }
-
-
   .break-section {
     padding: 20em 0;
   }
@@ -685,12 +674,10 @@ margin-left: -2.5%;
     padding: 3em 2em;
     font-size: 1.3rem;
   }
-
   .portfolio-textbox {
     padding-bottom: 9em;
     padding-top: 7em;
   }
-
 } */
 
 
@@ -753,54 +740,41 @@ margin-left: -2.5%;
   margin: 5em 0 5em 0;
   padding: 5em 0 5em 0;
   border: 2px solid blue;
-
 }
-
-
 .carousel__image {
   object-fit: cover;
   width: 100%;
   height: 100%
-
 }
-
 .carousel__track-container {
   background: lightgreen;
   height: 100%;
   position: relative;
   margin: 0;
   padding: 0;
-
 }
-
 .carousel__track {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .carousel__slide {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
 }
-
 .carousel__button {
   /* position: absolute; */
 /* background: transparent;
   border: 0;
   cursor: pointer;
-
 }
-
 .carousel__button img {
   width: 25px;
 }
-
 .carousel__button--left {
 }
-
 .carousel {
   border: 2px solid red;
   position: relative;
