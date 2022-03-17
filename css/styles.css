@@ -341,13 +341,13 @@ margin-left: -2.5%;
 }
 
 /* SERVICE SECTION */
+
 .services-section {
-  padding: 1.5em;
+  padding: 5em 1.5em 0;
   background-color: black;
   /* margin: 0; */
   width: 100vw;
-  /* margin-left: -2.5%; */
-  /* max-width: 1000px; */
+  margin-left: -2.5%;
   /* margin: auto; */
 }
 
@@ -355,6 +355,7 @@ margin-left: -2.5%;
 .service-title {
   font-family: 'Monofett', cursive;
   font-size: 1.7em;
+  padding-top: .8em;
 }
 
 .service-para {
@@ -375,19 +376,71 @@ margin-left: -2.5%;
 }
 
 
-.break-section {
-  background-image: url(../images/thread-floyd.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 7em 0;
-  width: 100vw;
-}
+@media (min-width: 450px) {
+  .services-section {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 
-@media (min-width: 400px) {
-  .break-section {
-    padding: 11em 0;
+  .service-para {
+    padding: 1.5em;
   }
 }
+
+
+@media (min-width: 550px) {
+  .services-section {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .service-para {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .services-section {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .service-para {
+    padding: 2.5em;
+  }
+}
+
+@media (min-width: 700px) {
+  .services-section {
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+
+}
+
+
+
+@media (min-width: 750px) {
+  .services-section {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .services-section {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+
+}
+@media (min-width: 950px) {
+  .services-section {
+    padding-left: 15em;
+    padding-right: 15em;
+  }
+
+}
+/*
 @media (min-width: 500px) {
   .service-para {
     margin: 2em;
@@ -409,6 +462,7 @@ margin-left: -2.5%;
 }
 
 
+
 @media (min-width: 400px) {
   .service-textbox {
     max-width: 400px;
@@ -421,11 +475,89 @@ margin-left: -2.5%;
     padding: 3em 2em;
     font-size: 1.3rem;
   }
+ */
 
+
+
+
+.break-section {
+  background-image: url(../images/thread-floyd.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 7em 0;
+  width: 100vw;
+}
+
+@media (min-width: 375px) {
+  .break-section {
+    padding: 8em 0;
+  }
+}
+
+@media (min-width: 450px) {
+  .break-section {
+    padding: 10em 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .break-section {
+    padding: 11em 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .break-section {
+    padding: 13em 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .break-section {
+    padding: 14em 0;
+  }
+}
+@media (min-width: 700px) {
+  .break-section {
+    padding: 15em 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .break-section {
+    padding: 16em 0;
+  }
+}
+@media (min-width: 800px) {
+  .break-section {
+    padding: 19em 0;
+  }
+}
+
+@media (min-width: 900px) {
   .break-section {
     padding: 20em 0;
   }
 }
+
+@media (min-width: 950px) {
+  .break-section {
+    padding: 21em 0;
+  }
+}
+
+
+/* @media (min-width: 400px) {
+  .break-section {
+    padding: 11em 0;
+  }
+}
+
+
+  .break-section {
+    padding: 20em 0;
+  }
+} */
 
 /* PORTFOLIO SECTION */
 
@@ -438,16 +570,81 @@ margin-left: -2.5%;
 }
 
 .portfolio-textbox {
-  padding: 3em 1em 3em 1em;
+  padding: 3em 1.5em 3em 1.5em;
+
 }
 
 .port-para {
   border: 2px solid orange;
   padding: 1em;
-  margin: 1em;
   line-height: 1.5em;
 }
 
+@media (min-width: 450px) {
+  .portfolio-textbox {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .port-para {
+    padding: 1.5em;
+  }
+}
+
+@media (min-width: 550px) {
+  .portfolio-textbox {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .port-para {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .portfolio-textbox {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .port-para {
+    padding: 2.5em;
+  }
+}
+
+@media (min-width: 700px) {
+  .portfolio-textbox {
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+
+}
+
+@media (min-width: 750px) {
+  .portfolio-textbox {
+    padding-left: 9em;
+    padding-right: 9em;
+    margin-bottom: 2em;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .portfolio-textbox {
+    padding-left: 12em;
+    padding-right: 12em;
+    margin-bottom: 4em;
+
+  }
+}
+
+@media (min-width: 950px) {
+  .portfolio-textbox {
+  padding-left: 15em;
+  padding-right: 15em;
+  margin-bottom: 6em;
+
+
+}
+}
 .price-para {
   font-family: 'Monofett', cursive;
   font-size: 1.5em;
@@ -480,14 +677,9 @@ margin-left: -2.5%;
 
 }
 
-@media (min-width: 500px) {
-  .port-para {
-    margin: 2em;
-    padding: 3em 2.5em;
-  }
-}
 
-@media (min-width: 800px) {
+
+/* @media (min-width: 800px) {
   .port-para {
     margin: 0 5em 0;
     padding: 3em 2em;
@@ -499,7 +691,7 @@ margin-left: -2.5%;
     padding-top: 7em;
   }
 
-}
+} */
 
 
 @media (min-width: 500px) {
@@ -655,6 +847,14 @@ li {
   }
 }
 
+
+@media (min-width: 800px) {
+  footer {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+
 /* ABOUT PAGE */
 .about-hero {
   background-image: url(../images/neon-crinkle-3.jpg);
@@ -668,13 +868,44 @@ li {
 .about-textbox {
   background: black;
   padding: 1em;
+  padding-bottom: 3em;
   margin: 11em auto;
   max-width: 800px;
 }
 
+.about-para {
+  line-height: 1.5;
+}
+
+@media (min-width: 400px) {
+.about-textbox {
+  padding: 2em;
+}
+.about-para {
+  text-align: left;
+}
+.about-heart {
+  text-align: center;
+}
+}
+
+
+@media (min-width: 700px) {
+.about-textbox {
+  padding-left: 4em;
+  padding-top: 3em;
+  padding-right: 4em;
+  padding-bottom: 4em;
+
+}
+
+
+
 @media (min-width: 800px) {
 .about-textbox {
-  padding: 5em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 3em;
 }
 }
 
@@ -808,19 +1039,18 @@ li {
   }
 
   .break-section {
-    padding: 15em 0 30em 0;
-  }
-
+    padding: 23em 0;
+}
   .services-section {
     /* padding: 1.5em 1.5em; */
-    padding: 4em 6em 4em 3em;
+    padding: 8em 6em 4em 3em;
     background-color: black;
     /* margin: 0; */
     width: 100vw;
     /* margin-left: -2.5%; */
     display: flex;
     margin: auto;
-    max-width: 1500px;
+    max-width: 1100px;
   }
 
   .service-title {
