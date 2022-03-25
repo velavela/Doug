@@ -494,6 +494,7 @@ footer li {
   padding: 4.5em 0 3em;
   width: 100vw;
 }
+
 .dash {
   display: none;
 }
@@ -519,6 +520,11 @@ footer li {
   text-align: center;
   margin: auto;
 }
+
+.listing-para {
+  text-align: left;
+}
+
 .service-listing-subtitle {
   color: orange;
   font-family: 'Monofett', cursive;
@@ -1009,3 +1015,47 @@ footer li {
   .portfolio-section {
     border: 2px solid red;
   }
+
+
+/* CONTACT FORM */
+.form-container {
+  /* border: 2px solid pink; */
+  background-color: #282828;
+  display: flex;
+  margin: auto;
+  padding: 1em;
+  width: 500px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-label {
+  display: block;
+  font-size: .75em;
+  opacity: 1;
+  text-align: left;
+}
+
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #ccc;
+  border-style: none none solid none;
+font-size: 1.25em;
+  width: 100%;
+
+}
+.form-control::placeholder {
+  color:#aaa;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #00ff6c;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
