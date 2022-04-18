@@ -598,7 +598,7 @@ footer li {
 }
 
 .message-label {
-  transform: translateY(-8.25em);
+  transform: translateY(-8.80em);
 }
 
 .form-control {
@@ -628,7 +628,7 @@ footer li {
 }
 
 .form-control:focus+.message-label, .form-control:not(:placeholder-shown)+.message-label {
-  transform: translateY(-9.65em) scale(.8);
+  transform: translateY(-10.5em) scale(.8);
 }
 
 .form-group:focus-within {
