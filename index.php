@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doug's Upholstery</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/e6a95c8b6e.js" crossorigin="anonymous"></script>
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+  <div class="container">
+    <section class="home-hero">
+      <h1 class="title mobile-version">
+        <span class="a">D</span><span class="b">o</span><span class="c">u</span><span class="d">g'</span><span class="e">s</span> <span class="f">U</span><span class="g">p</span><span class="h">h</span><span class="i">o</span><span
+          class="j">l</span><span class="k">s</span><span class="l">t</span><span class="m">e</span><span class="n">r</span><span class="o">y</span>
+      </h1>
+
+      <h1 class="desk-title desk-version">
+        <span class="desk-doug>">Doug's</span>
+      </h1>
+      <h1 class="desk-title desk-version"><span class="desk-up">Upholstery</span>
+      </h1>
+
+      <h2 class="hero-subtitle">Austin, TX</h2>
+    </section>
+  </div>
+
+
+
+  <div class="container">
+    <section class="neon-hero">
+
+    </section>
+  </div>
+
+
+
+  <div class="container">
+    <section class="services-section">
+
+
+
+      <div class="service-textbox">
+        <h2 class="service-title custom-upholstery">Custom<br>Upholstery</h2>
+        <p class="service-para first-para">Barstools, couches, chairs, indoor and outdoor furniture, box cushions, massage tables, barbershop and tattoo parlor chairs- the list goes on! We give new life to professional and personal pieces and will
+          assist with a complete recovery or repairs. Option to source material or we are happy to provide.</p>
+      </div>
+
+      <div class="service-textbox">
+        <h2 class="service-title mobile-service">Mobile<br>Service</h2>
+        <p class="service-para second-para">Let us come to you! We bring the tools and know how at a time that works for you, so you don’t have to worry about getting that chair through a doorway or disrupting normal business hours. Always
+          professional, we have an eye on cleanup when we are working in your space. We travel within 30 miles of Austin.
+        </p>
+      </div>
+
+      <div class="service-textbox">
+        <h2 class="service-title rentals">Rentals</h2>
+        <p class="service-para third-para">We offer rentals for your creative projects! We have that statement piece for your photoshoot, theater production, art project, or fancy party- look no further! If you like our style but aren't finding the
+          exact piece you need, please reach out - our inventory is always changing and we do customizations.
+      </div>
+
+
+
+    </section>
+  </div>
+
+
+  <section class="break-section">
+    <div class="desk-portfolio-textbox">
+      <h1 class="title unique-title">Unique Pieces</h1>
+      <p class="port-para">There is nothing we love more than giving a second life to an unwanted piece.
+        <br>
+        <br>
+
+        Every item is upcycled and aquired by us at no cost, so we pass the savings on to you! You are paying for the labor of deconstruction, cleaning and reupholstery, and the new fabric.
+        <br>
+        <br>
+
+        Check out our inventory below!
+      </p>
+
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="unique-pieces-section">
+
+        <div class="portfolio-textbox">
+          <h1 class="title">Unique Pieces</h1>
+          <p class="port-para">There is nothing we love more than giving a second life to an unwanted piece.
+            <br>
+            <br>
+
+            Every item is upcycled and aquired by us at no cost, so we pass the savings on to you! You are paying for the labor of deconstruction, cleaning and reupholstery, and the new fabric.
+            <br>
+            <br>
+
+            Check out our inventory below!
+          </p>
+
+        </div>
+    </section>
+  </div>
+
+
+
+  <div class="container">
+    <section class="portfolio-section">
+
+
+      <div class="portfolio-container">
+
+
+        <!-- portfolio item 01 -->
+
+
+        <figure class="port-item">
+          <img class="portfolio-img pendleton-img" src="images/dots.jpg" alt="">
+          <figcaption class="port-desc">
+            <p class="price-para">$700</p>
+            <a href="" class="button button-accent button-small">Details</a>
+          </figcaption>
+        </figure>
+
+
+
+
+        <!-- portfolio item 02 -->
+
+
+
+        <figure class="port-item">
+          <img class="portfolio-img" src="images/blue-chair.jpg" alt="">
+          <figcaption class="port-desc">
+            <p class="price-para">$100</p>
+            <a href="" class="button button-accent button-small">Details</a>
+          </figcaption>
+        </figure>
+
+
+        <!-- portfolio item 03 -->
+        <figure class="port-item">
+          <img class="portfolio-img" src="images/cardi.jpg" alt="">
+          <figcaption class="port-desc">
+            <p class="price-para">$200</p>
+            <a href="" class="button button-accent button-small">Details</a>
+          </figcaption>
+        </figure>
+
+        <!-- portfolio item 04 -->
+        <figure class="port-item">
+          <img class="portfolio-img" src="images/idfk.jpg" alt="">
+          <figcaption class="port-desc">
+            <p class="price-para">$350</p>
+            <a href="" class="button button-accent button-small">Details</a>
+          </figcaption>
+        </figure>
+
+        <!-- portfolio item 05 -->
+        <figure class="port-item">
+          <img class="portfolio-img" src="images/plaid.jpg" alt="">
+          <figcaption class="port-desc">
+            <p class="price-para">$150</p>
+            <a href="" class="button button-accent button-small">Details</a>
+          </figcaption>
+        </figure>
+
+        <!-- portfolio item 06 -->
+        <figure class="port-item">
+          <img class="portfolio-img" src="images/the-sea.jpg" alt="">
+
+          <figcaption class="port-desc">
+            <p class="price-para">$120</p>
+            <a href="" class="button button-accent button-small">Details</a>
+          </figcaption>
+
+        </figure>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="container">
+    <section class="cta-section">
+      <a href="" class="button button-accent-cta">Visit Store</a>
+    </section>
+  </div>
+
+
+  <footer>
+
+    <div class="footer-flexbox-container">
+
+      <div class="footer-1">
+        <ul class="unstyled-list">
+          <li class="list-title"><strong>Follow</strong></li>
+          <li><a href="https://www.instagram.com/dougsupholstery/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@dougsupholstery"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-2">
+        <ul class="unstyled-list">
+          <li class="list-title"><strong>Services</strong></li>
+          <li><a href="services.html">Custom</a></li>
+          <li><a href="services.html">Mobile</a></li>
+          <li><a href="store.html">Rent or Own</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-3">
+        <ul class="unstyled-list">
+          <li class="list-title"><strong>Design Credits</strong></li>
+          <li><a href="photocredits.html">Unsplash</a></li>
+          <li><a href="">kelivela Design</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-4">
+      <ul class="unstyled-list">
+        <li>&#9825;&#9825;&#9825;&#9825;</li>
+        <li>
+          <h2 class="footer-subtitle">ATX + upcycle</h2>
+        </li>
+        <li>&#9825;&#9825;&#9825;&#9825;</li>
+      </ul>
+    </div>
+
+
+
+  </footer>
+
+</body>
+
+</html>
