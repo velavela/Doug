@@ -639,6 +639,12 @@ textarea {
   resize: none;
 }
 
+
+/* STORE PAGE */
+
+.store-section {
+  padding-top: 10em;
+}
 /* PHOTO CREDIT PAGE */
 .photocredits-container {
   display: flex;
@@ -666,6 +672,18 @@ textarea {
 .rainbow-wall {
   object-fit: cover;
   object-position: left;
+}
+
+/* INDIVIDUAL STORE PAGES */
+
+.shop-intro-section {
+  padding-top: 10em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  align-content: center;
+}
+.desk-portfolio-textbox {
+align-content: center;
 }
 
 /* MEDIA QUERIES */
