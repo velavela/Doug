@@ -545,7 +545,8 @@ footer li {
 
 .service-textbox {
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
+
 }
 
 .listing-para {
@@ -640,11 +641,7 @@ textarea {
 }
 
 
-/* STORE PAGE */
 
-.store-section {
-  padding-top: 10em;
-}
 /* PHOTO CREDIT PAGE */
 .photocredits-container {
   display: flex;
@@ -674,16 +671,31 @@ textarea {
   object-position: left;
 }
 
+/* SHOP PAGE */
+
+.store-section {
+  padding-top: 4em;
+}
 /* INDIVIDUAL STORE PAGES */
 
 .shop-intro-section {
-  padding-top: 10em;
-  padding-bottom: 0;
+  padding-top: 5em;
   margin-bottom: 0;
-  align-content: center;
 }
+
 .desk-portfolio-textbox {
-align-content: center;
+  margin: auto;
+}
+
+.shop-container {
+  padding: 0;
+}
+
+.shop-para {
+  border: 2px solid orange;
+  line-height: 1.5em;
+  padding: 1em;
+  text-align: left;
 }
 
 /* MEDIA QUERIES */
@@ -840,6 +852,13 @@ align-content: center;
     padding: 0;
     margin: 0;
   }
+
+  .shop-container {
+
+    margin: 0 auto;
+    max-width: 700px;
+    padding-bottom: 1em;
+  }
 }
 
 @media (min-width: 700px) {
@@ -967,6 +986,10 @@ align-content: center;
 
   .port-item:hover .port-desc {
     transform: translateY(0%);
+  }
+
+  .store-section {
+    padding-top: 10em;
   }
 }
 
@@ -1131,6 +1154,10 @@ margin-left: 3em;
 
   .contact-textbox {
     margin: 12em auto 12em auto;
+  }
+
+  .shop-container {
+    padding-top: 3em;
   }
 }
 
