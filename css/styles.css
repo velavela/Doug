@@ -301,6 +301,10 @@ nav a:hover {
   border: 2px solid orange;
 }
 
+.third-box {
+  margin-bottom: 4em;
+}
+
 .break-section {
   background-image: url(../images/thread-floyd.jpg);
   background-position: center;
@@ -1103,6 +1107,8 @@ textarea {
     max-width: 900px;
   }
 
+
+
   .services-section>* {
     flex: 1;
   }
@@ -1121,7 +1127,7 @@ textarea {
 
   .break-section {
     /* margin: 10em 0 10em; */
-    padding: 0;
+padding: 25em 0;
     max-width: 1200px;
     margin: 0 auto;
 
